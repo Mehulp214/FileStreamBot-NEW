@@ -10,7 +10,7 @@ class Telegram:
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     OWNER_ID = int(env.get('OWNER_ID', '5993556795'))
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('DATABASE_URL','mongodb+srv://newuser_31:qwerty_1234@cluster0.lajjdmy.mongodb.net/'))
+    DATABASE_URL = str(env.get('DATABASE_URL','mongodb+srv://filestream:Qwerty_1234@cluster0.gezug.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "MEHULBOTS"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)
