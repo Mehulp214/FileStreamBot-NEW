@@ -6,7 +6,7 @@ load_dotenv()
 class Telegram:
     API_ID = int(env.get("API_ID", 13216322))
     API_HASH = str(env.get("API_HASH", "15e5e632a8a0e52251ac8c3ccbe462c7"))
-    BOT_TOKEN = str(env.get("BOT_TOKEN", "7837585311:AAF4_XFCpPVQa9q7osXtvAqMI_UJ2A6OOfc"))
+    BOT_TOKEN = str(env.get("BOT_TOKEN", "7837585311:AAF4_XFCpP7osXtvAqMI_UJ2A6OOfc"))
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     OWNER_ID = int(env.get('OWNER_ID', '5993556795'))
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
@@ -29,7 +29,7 @@ class Telegram:
 
 class Server:
     PORT = int(env.get("PORT", 8080))
-    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "185.182.187.49"))
+    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "18.187.49"))
     PING_INTERVAL = int(env.get("PING_INTERVAL", "1200"))
     HAS_SSL = str(env.get("HAS_SSL", "0").lower()) in ("1", "true", "t", "yes", "y")
     NO_PORT = str(env.get("NO_PORT", "0").lower()) in ("1", "true", "t", "yes", "y")
